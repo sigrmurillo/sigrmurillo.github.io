@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cars Connect - Servicios</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            body {
+                background-color: #f5f5f5; /* Fondo gris claro */
+            }
+
+            header {
+                background-color: #4b5a82; /* Color mostaza para el encabezado */
+                color: #eff2f6; /* Texto oscuro */
+            }
+
+            .navbar {
+                background-color: #c59300; /* Fondo de la barra de navegación */
+            }
+
+            .nav-link {
+                color: #f4f6f8; /* Color de los enlaces */
+            }
+
+            nav.navbar a.nav-link:hover {
+                color: #4b5a82;
+                background-color: rgba(255, 255, 255, 0.2);
+                border-radius: 5px;
+            }
+
+            .card {
+                border: 1px solid #d5a200; /* Borde mostaza para las cards */
+            }
+
+            footer {
+                background-color: #4b5a82; /* Fondo oscuro para el pie de página */
+                color: #eff2f6; /* Texto blanco */
+            }
+
+            footer a {
+                color: #eff2f6; /* Color de enlaces en el footer */
+            }
+
+            footer a:hover {
+                text-decoration: underline; /* Subrayado al pasar el mouse */
+            }
+
+            .social-links a {
+                color: white;
+                margin: 0 10px;
+            }
+
+            .social-links a:hover {
+                color: #c59300; /* Mostaza */
+            }
+
+            .card {
+                width: 300px; /* Ancho fijo */
+                height: 400px; /* Altura fija */
+                border: 1px solid #ccc; /* Borde para definir el card */
+                margin: 10px; /* Espacio entre cards */
+                display: flex;
+                flex-direction: column; /* Permitir el apilamiento vertical */
+                justify-content: space-between; /* Espaciar el contenido uniformemente */
+                overflow: hidden; /* Ocultar el contenido que desborda */
+            }
+
+            .card img {
+                width: 100%; /* Imagen ocupa todo el ancho del card */
+                height: auto; /* Mantiene la proporción de la imagen */
+            }
+
+            .card-content {
+                padding: 10px; /* Espaciado interno */
+                flex-grow: 1; /* Permitir que el contenido crezca para llenar el espacio */
+            }
+
+            .card-content h3 {
+                margin: 0; /* Quitar margen */
+            }
+
+            .card-content p {
+                margin: 0; /* Quitar margen */
+                overflow: hidden; /* Ocultar texto que sobrepase */
+                text-overflow: ellipsis; /* Agregar "..." al final si el texto es demasiado largo */
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2; /* Limitar a 2 líneas */
+            }
+
+            .button {
+                background-color: #ffcc00; /* Color de fondo del botón */
+                color: #000; /* Color del texto del botón */
+                padding: 10px; /* Espaciado interno */
+                text-align: center; /* Centrar texto */
+                text-decoration: none; /* Sin subrayado */
+                border-radius: 5px; /* Bordes redondeados */
+            }
+            .cart {
+                margin-top: 30px;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <!-- Encabezado -->
+        <header class="text-white text-center p-4">
+            <h1>Servicios Cars Connect</h1>
+        </header>
+
+    <!-- Menú de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="index.html">Inicio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="Nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Preguntas.html">Preguntas Frecuentes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="AcercaDe.html">Acerca de</a></li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Carrito.html">
+                            <i class="bi bi-cart"></i> <!-- Icono de carrito de compra -->
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+        <main>
+            <section>
+                <h1>Opciones de Financiamiento</h1>
+                <p>Descubre las opciones de financiamiento que ofrecemos para la compra de tu próximo vehículo. Encuentra un plan que se ajuste a tus necesidades.</p>
+            </section>
+
+            <section class="catalogo d-flex flex-wrap justify-content-center">
+                <!-- 12 Cards -->
+                <div class="card">
+                    <img src="img/vehiculo1.jpg" alt="Vehículo 1">
+                    <h2>Vehículo A</h2>
+                    <p>Descripción breve del Vehículo A con características destacadas.</p>
+                    <ul>
+                        <li>Financiamiento a 24 meses</li>
+                        <li>Interés del 6%</li>
+                        <li>Pago mensual: $300</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <img src="img/vehiculo2.jpg" alt="Vehículo 2">
+                    <h2>Vehículo B</h2>
+                    <p>Descripción breve del Vehículo B con características destacadas.</p>
+                    <ul>
+                        <li>Financiamiento a 36 meses</li>
+                        <li>Interés del 5%</li>
+                        <li>Pago mensual: $350</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <img src="img/vehiculo3.jpg" alt="Vehículo 3">
+                    <h2>Vehículo C</h2>
+                    <p>Descripción breve del Vehículo C con características destacadas.</p>
+                    <ul>
+                        <li>Financiamiento a 48 meses</li>
+                        <li>Interés del 4%</li>
+                        <li>Pago mensual: $400</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <img src="img/vehiculo4.jpg" alt="Vehículo 4">
+                    <h2>Vehículo D</h2>
+                    <p>Descripción breve del Vehículo D con características destacadas.</p>
+                    <ul>
+                        <li>Financiamiento a 24 meses</li>
+                        <li>Interés del 6%</li>
+                        <li>Pago mensual: $300</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <img src="img/vehiculo5.jpg" alt="Vehículo 5">
+                    <h2>Vehículo E</h2>
+                    <p>Descripción breve del Vehículo E con características destacadas.</p>
+                    <ul>
+                        <li>Financiamiento a 36 meses</li>
+                        <li>Interés del 5%</li>
+                        <li>Pago mensual: $350</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <img src="img/vehiculo6.jpg" alt="Vehículo 6">
+                    <h2>Vehículo F</h2>
+                    <p>Descripción breve del Vehículo F con características destacadas.</p>
+                    <ul>
+                        <li>Financiamiento a 48 meses</li>
+                        <li>Interés del 4%</li>
+                        <li>Pago mensual: $400</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <img src="img/vehiculo7.jpg" alt="Vehículo 7">
+                    <h2>Vehículo G</h2>
+                    <p>Descripción breve del Vehículo G con características destacadas.</p>
+                    <ul>
+                        <li>Financiamiento a 24 meses</li>
+                        <li>Interés del 6%</li>
+                        <li>Pago mensual: $300</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <img src="img/vehiculo8.jpg" alt="Vehículo 8">
+                    <h2>Vehículo H</h2>
+                    <p>Descripción breve del Vehículo H con características destacadas.</p>
+                    <ul>
+                        <li>Financiamiento a 36 meses</li>
+                        <li>Interés del 5%</li>
+                        <li>Pago mensual: $350</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <img src="img/vehiculo9.jpg" alt="Vehículo 9">
+                    <h2>Vehículo I</h2>
+                    <p>Descripción breve del Vehículo I con características destacadas.</p>
+                    <ul>
+                        <li>Financiamiento a 48 meses</li>
+                        <li>Interés del 4%</li>
+                        <li>Pago mensual: $400</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <img src="img/vehiculo10.jpg" alt="Vehículo 10">
+                    <h2>Vehículo J</h2>
+                    <p>Descripción breve del Vehículo J con características destacadas.</p>
+                    <ul>
+                        <li>Financiamiento a 24 meses</li>
+                        <li>Interés del 6%</li>
+                        <li>Pago mensual: $300</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <img src="img/vehiculo11.jpg" alt="Vehículo 11">
+                    <h2>Vehículo K</h2>
+                    <p>Descripción breve del Vehículo K con características destacadas.</p>
+                    <ul>
+                        <li>Financiamiento a 36 meses</li>
+                        <li>Interés del 5%</li>
+                        <li>Pago mensual: $350</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+       
+        
+          <!-- Resumen del carrito -->
+          <section class="cart">
+            <h2>Tu carrito de compras</h2>
+            <ul id="carrito-lista">
+                <!-- Lista de productos añadidos -->
+            </ul>
+            <p id="total">Total: $0</p>
+            <button class="button" onclick="generarFactura()">Generar Factura</button>
+        </section>
+    </main>
+
+        <!-- Footer -->
+        <footer class="text-center p-4">
+            <div class="social-links">
+                <a href="#" target="_blank">Facebook</a>
+                <a href="#" target="_blank">Instagram</a>
+                <a href="#" target="_blank">Twitter</a>
+            </div>
+            <p>&copy; 2024 Cars Connect. Todos los derechos reservados.</p>
+        </footer>
+        <script>
+            // Carrito de compras
+            let carrito = [];
+            let total = 0;
+
+            // Función para agregar productos al carrito
+            function agregarAlCarrito(producto, precio) {
+                carrito.push({ producto, precio });
+                actualizarCarrito();
+            }
+
+            // Función para actualizar el carrito
+            function actualizarCarrito() {
+                let carritoLista = document.getElementById("carrito-lista");
+                carritoLista.innerHTML = ""; // Limpiar lista actual
+
+                total = 0;
+                carrito.forEach(item => {
+                    let li = document.createElement("li");
+                    li.textContent = `${item.producto} - $${item.precio}`;
+                    carritoLista.appendChild(li);
+                    total += item.precio;
+                });
+
+                // Mostrar el total
+                document.getElementById("total").textContent = `Total: $${total}`;
+            }
+
+            // Función para generar factura en JSON
+            function generarFactura() {
+                if (carrito.length === 0) {
+                    alert("Tu carrito está vacío. Agrega productos antes de generar la factura.");
+                    return;
+                }
+
+                let factura = {
+                    fecha: new Date().toLocaleString(),
+                    productos: carrito,
+                    total: total
+                };
+
+                // Mostrar la factura en consola (puedes guardarla en algún lugar o enviarla a un servidor)
+                console.log("Factura generada:", JSON.stringify(factura, null, 2));
+
+                alert("Factura generada con éxito! Revisa la consola.");
+                carrito = []; // Limpiar carrito después de generar la factura
+                actualizarCarrito(); // Actualizar carrito en la interfaz
+            }
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
+
+

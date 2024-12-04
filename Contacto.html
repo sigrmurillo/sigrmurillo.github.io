@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars Connect - Contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f7f7f7;
+        }
+
+        header {
+            background-color: #4b5a82; /* Color mostaza para el encabezado */
+            color: #eff2f6; /* Texto oscuro */
+        }
+
+        .navbar {
+            background-color: #c59300; /* Fondo de la barra de navegación */
+        }
+
+        .nav-link {
+            color: #f4f6f8; /* Color de los enlaces */
+        }
+
+        nav.navbar a.nav-link:hover {
+            color: #4b5a82;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #4b5a82; /* Gris claro */
+            padding: 20px;
+        }
+
+        .social-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #d9a835; /* Color mostaza */
+        }
+
+        .social-links a:hover {
+            color: #c59300; /* Mostaza */
+        }
+
+        .btn-mustard {
+            background-color: #d9a835; /* Color mostaza */
+            color: white; /* Texto blanco */
+        }
+
+        .btn-mustard:hover {
+            background-color: #c69c2d; /* Color mostaza más oscuro al pasar el ratón */
+            color: white; /* Texto blanco */
+        }
+
+        .section-title {
+            color: #4b5a82 /* Color azul */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Encabezado -->
+    <header class="text-white text-center p-4">
+        <h1>Contactenos</h1>
+        <p>Ponte en contacto con nosotros</p>
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Inicio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="Nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Preguntas.html">Preguntas Frecuentes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="AcercaDe.html">Acerca de</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Información de contacto de la empresa -->
+    <section class="container mt-4">
+        <h2 class="section-title">Información de Contacto</h2>
+        <p><strong>Teléfono:</strong> +506 1234-5678</p>
+        <p><strong>Dirección:</strong> Avenida Central, San José, Costa Rica</p>
+        <p><strong>Horarios de Atención:</strong> Lunes a Viernes: 8:00 AM - 6:00 PM, Sábados: 9:00 AM - 2:00 PM</p>
+        <p><strong>Ubicación de la Empresa:</strong></p>
+        
+        <!-- Aquí se incrusta el mapa de Google Maps -->
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3935.6640190135025!2d-84.13868052476391!3d9.93542869086431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa5c1b098423ba5%3A0xb3654cd6b6bcf4a0!2sAvenida%20Central%2C%20San%20José%2C%20Costa%20Rica!5e0!3m2!1ses!2scr!4v1709557491151!5m2!1ses!2scr" width="1300" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+    
+
+    <!-- Formulario de contacto -->
+    <main class="container mt-4">
+        <h2 class="section-title">Formulario de Contacto</h2>
+        <form id="contactForm">
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre Completo:</label>
+                <input type="text" class="form-control" id="nombre" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo Electrónico:</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="fecha-nacimiento" class="form-label">Fecha de Nacimiento:</label>
+                <input type="date" class="form-control" id="fecha-nacimiento" required>
+            </div>
+            <div class="mb-3">
+                <label for="genero" class="form-label">Género:</label>
+                <select class="form-select" id="genero" required>
+                    <option value="" selected disabled>Seleccione su género</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="telefono" class="form-label">Número de Teléfono:</label>
+                <input type="tel" class="form-control" id="telefono" required>
+            </div>
+            <div class="mb-3">
+                <label for="servicio" class="form-label">Servicio de Interés:</label>
+                <select class="form-select" id="servicio" required>
+                    <option value="" selected disabled>Seleccione un servicio</option>
+                    <option value="compra">Compra de Carro</option>
+                    <option value="venta">Venta de Carro</option>
+                    <option value="asesoria">Asesoría Legal</option>
+                    <option value="seguro">Seguro de Auto</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="fecha" class="form-label">Fecha de Contacto Preferida:</label>
+                <input type="date" class="form-control" id="fecha" required>
+            </div>
+            <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje:</label>
+                <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-mustard">Enviar</button>
+        </form>
+    </main>
+
+    <!-- Pie de Página -->
+    <footer class="text-center p-3 mt-5">       
+        <div>
+            <a href="https://www.facebook.com" class="text-white me-2" target="_blank">Facebook</a>
+            <a href="https://www.twitter.com" class="text-white me-2" target="_blank">Twitter</a>
+            <a href="https://www.instagram.com" class="text-white me-2" target="_blank">Instagram</a>
+            <a href="https://www.linkedin.com" class="text-white" target="_blank">LinkedIn</a>
+        </div>
+        <p>&copy; 2024 Cars Connect. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Función para obtener la geolocalización de la empresa
+        function obtenerUbicacion() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function (posicion) {
+                    var lat = posicion.coords.latitude;
+                    var lon = posicion.coords.longitude;
+                    var ubicacion = "Lat: " + lat + ", Lon: " + lon;
+                    document.getElementById('empresa-ubicacion').textContent = ubicacion;
+                }, function (error) {
+                    document.getElementById('empresa-ubicacion').textContent = "No se pudo obtener la ubicación.";
+                });
+            } else {
+                document.getElementById('empresa-ubicacion').textContent = "La geolocalización no está soportada por este navegador.";
+            }
+        }
+    
+        // Llamar a la función de geolocalización al cargar la página
+        window.onload = obtenerUbicacion;
+    
+        // Validación y envío del formulario
+        document.getElementById("contactForm").addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevenir el comportamiento por defecto del formulario
+    
+            var nombre = document.getElementById("nombre").value;
+            var email = document.getElementById("email").value;
+            var mensaje = document.getElementById("mensaje").value;
+    
+            if (nombre && email && mensaje) {
+                alert("Gracias por contactarnos. Nos pondremos en contacto contigo pronto.");
+                
+                // Limpiar el formulario
+                document.getElementById("contactForm").reset();
+    
+                // Aquí puedes agregar código para enviar el formulario, por ejemplo, con AJAX:
+                // let formData = new FormData(document.getElementById("contactForm"));
+                // Enviar el formulario con AJAX o a un servidor
+                // fetch('url_del_servidor', { method: 'POST', body: formData })
+            } else {
+                alert("Por favor, complete todos los campos del formulario.");
+            }
+        });
+    </script>
+    
+
+</body>
+
+</html>

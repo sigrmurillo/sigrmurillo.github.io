@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars Connect - Nosotros</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f5f5f5; /* Gris claro */
+            
+        }
+
+        h2 {
+            margin-top: 2rem;
+            color: #c59300; /* Mostaza más oscuro */
+        }
+
+        header {
+            background-color: #4b5a82;; /* Mostaza más oscuro */
+            color: #eff2f6; /* Blanco para el texto */
+        }
+
+        footer {
+            background-color: #4b5a82;; /* Gris claro */
+            color: #eff2f6; /* Gris medio para el texto */
+        }
+
+        .navbar {
+            background-color: #c59300; /* Gris claro */
+        }
+
+        .navbar-nav .nav-link {
+            color: #f5f5f5; /* Gris medio */
+            font-size: 1.2rem; /* Aumenta el tamaño de la letra */
+            padding: 0.75rem 1rem; /* Espaciado más amplio */
+            transition: color 0.3s ease;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente elegante */
+        }
+
+        nav.navbar a.nav-link:hover {
+            color: #4b5a82;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+        }
+
+        .navbar-toggler {
+            border-color: #c59300; /* Mostaza */
+        }
+
+        .testimonial-carousel .carousel-item {
+            padding: 2rem;
+            background-color: #d8e7ef; /* Gris claro */
+            border-left: 5px solid #c59300; /* Mostaza más oscuro */
+        }
+
+        .testimonial-carousel .carousel-item p {
+            font-size: 1.1rem;
+            font-style: italic;
+        }
+
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            width: 5%; /* Reduce el ancho para que las flechas no cubran contenido */
+        }
+
+        .carousel-indicators [data-bs-target] {
+            background-color: #eff2f6; /* Mostaza */
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: #eff2f6; /* Mostaza */
+        }
+
+        /* Footer - Redes sociales */
+        .social-links {
+            display: flex;
+            justify-content: center;
+            padding: 1rem 0;
+        }
+
+        .social-links a {
+            color: #eff2f6; /* Gris medio */
+            margin: 0 10px;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+        .social-links a:hover {
+            color: #c59300; /* Mostaza */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Encabezado -->
+    <header class="text-center p-4">
+        <h1>Nosotros</h1>
+        <p>Conoce más sobre nuestra empresa y misión</p>
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Inicio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="Nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Preguntas.html">Preguntas Frecuentes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="AcercaDe.html">Acerca de</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <main class="container mt-4">
+        <h2>Nuestra Misión</h2>
+        <p>En Cars Connect, nuestra misión es facilitar el proceso de compra y venta de autos, ofreciendo servicios de asesoría y seguros para garantizar la mejor experiencia para nuestros clientes.</p>
+
+        <h2>¿Quiénes somos?</h2>
+        <p>Somos un equipo dedicado de profesionales con años de experiencia en el mercado automotriz, legal y de seguros, comprometidos con ofrecerte el mejor servicio personalizado.</p>
+
+        <h2>Nuestra Filosofía</h2>
+        <p>Creemos en la transparencia, la confianza y el servicio al cliente como pilares fundamentales de nuestra organización. Nos esforzamos por crear relaciones duraderas con nuestros clientes.</p>
+
+        <h2>Nuestra Visión</h2>
+        <p>Aspiramos a ser la plataforma líder en la compra y venta de autos en Costa Rica, proporcionando una experiencia sin igual para nuestros usuarios.</p>
+
+        <!-- Carrusel de Testimonios -->
+        <h2>Testimonios de Clientes</h2>
+        <div id="testimonialCarousel" class="carousel slide testimonial-carousel" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <p>"El servicio de Cars Connect fue excepcional. Compré mi auto sin complicaciones y con total confianza. Mario Mora-"</p>
+                    
+                </div>
+                <div class="carousel-item">
+                    <p>"Recomiendo Cars Connect a todos mis amigos. La asesoría fue de gran ayuda y el proceso fue rápido. María González-"</p>
+                    
+                </div>
+                <div class="carousel-item">
+                    <p>"Cars Connect realmente facilitó todo el proceso de compra. La atención al cliente fue sobresaliente. Pedro Salas-"</p>
+                    
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- Carrusel de Proyectos -->
+        <h2 class="mt-5">Proyectos de Éxito</h2>
+        <div id="projectsCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <p>Hemos ayudado a cientos de clientes a encontrar el auto perfecto, con un enfoque especial en la atención personalizada y el seguimiento post-venta.</p>
+                </div>
+                <div class="carousel-item">
+                    <p>Contamos con un historial comprobado de éxito, y nuestros clientes satisfechos son la mejor prueba de nuestro compromiso.</p>
+                </div>
+                <div class="carousel-item">
+                    <p>Nuestro equipo ha cerrado más de 500 transacciones exitosas en el último año, con una tasa de satisfacción del 98%.</p>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#projectsCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </main>
+
+    <!-- Pie de Página -->
+    <footer class="text-center p-4">
+        <div class="social-links">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/1234567890" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+        </div>
+        <p>&copy; 2024 Cars Connect. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
